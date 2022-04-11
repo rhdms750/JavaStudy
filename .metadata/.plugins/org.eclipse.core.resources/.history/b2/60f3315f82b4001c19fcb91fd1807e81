@@ -1,0 +1,22 @@
+package mymain.test;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public class InetAddressTest {
+	public static void main(String[] args) {
+		//cmd에서 ping www.naver.com 하면 naver주소를 알 수 있음
+		//DNS : domain name service server (www.naver.com)
+		        //도메인 이름을 구매
+		try {
+			InetAddress ip_naver = InetAddress.getByName("www.naver.com");
+			System.out.println(ip_naver.getHostAddress());
+			
+			InetAddress[] ip_daum = InetAddress.getAllByName("www.daum.net");
+			for(InetAddress tmp : ip_daum)
+				System.out.println(tmp.getHostAddress());
+		} catch (UnknownHostException e) {
+			System.out.println("없는 주소");
+		}
+	}
+}

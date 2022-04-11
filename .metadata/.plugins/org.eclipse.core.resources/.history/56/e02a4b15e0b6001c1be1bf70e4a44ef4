@@ -1,0 +1,18 @@
+package mymain.multichat.serial;
+
+import java.io.Serializable;
+
+public class Data implements Serializable{
+	//protocol 상수
+	public static final int IN = 1;
+	public static final int OUT = 2;
+	public static final int MSG = 3;
+	public static final int LIST = 4;
+	public static final int DRAW = 5;
+	
+	int protocol; //데이터의 종류
+	String nickname; //대화명
+	String message; //메시지
+	
+	
+}

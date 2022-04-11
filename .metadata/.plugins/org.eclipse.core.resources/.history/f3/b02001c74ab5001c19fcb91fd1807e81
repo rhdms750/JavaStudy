@@ -1,0 +1,16 @@
+package mymain.echo;
+
+import java.net.ServerSocket;
+
+public class EchoServer {
+
+	public static void main(String[] args) {
+		
+		//1. ServerSocket积己
+		ServerSocket server = new ServerSocket(7000);
+		
+		//2. 立加 措扁
+		
+	}
+
+}

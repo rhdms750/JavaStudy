@@ -1,0 +1,16 @@
+import java.awt.GridLayout;
+
+import javax.swing.JFrame;
+
+public class ComboBoxTest extends JFrame{
+	
+	ComboBoxTest(){
+		setTitle("Chat");
+		
+		setLayout(new GridLayout());
+	}
+	
+	public static void main(String[] args) {
+		new ComboBoxTest();
+	}
+}

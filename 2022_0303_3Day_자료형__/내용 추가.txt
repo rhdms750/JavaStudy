@@ -1,0 +1,60 @@
+*헝가리언 표기법 : 변수 앞에 접두어를 붙여 변수 성격을 표현
+boolean bOk = "파리"=="새"; 
+int nMoney = 100; 
+char *pName = "홍길동";
+
+*main함수 자동완성 : "main" + ctrl + shift
+
+*printf 형식 지정자
+---> %n.mf 형식  <- 전체자릿수를 n만큼 출력하며 그 중에 소수점은 m자릿수까지 출력(전체자릿수 생략가능)
+---> %.ms <- 문자수를 m개만 출력
+
+*ctrl+shift+o 누르면 필요 없는 import 삭제됨
+import java.util.Scanner;
+--> JRE내 java폴더 안에 util폴더 안에 Scanner클래스
+
+System.out.println(); 
+--> System클래스 안에 out 객체의 println메서드 
+
+System.in 입력객체
+
+///////
+
+Scanner scan = new Scanner(System.in);
+int width = scan.nextInt(); //next+정수형타입Wrapper();
+String name = scan.next(); //문자열 입력(공백 전까지 입력)
+String name = scan.nextLine(); //공백포함해서 입력받는다.
+
+※ 키보드 입력 --> 키보드 버퍼 --> 입력값 
+- nextLine()은 엔터까지 인식하고 엔터까지 가져옴. (출력은 엔터 없이)
+- next(), nextInt(), nextDouble(), nextBoolean()은 공백이나 엔터 전까지 가져옴(엔터는 남겨짐)
+  ---> 다음에 nextLine()이 있으면 nextLine이 엔터를 가져오고 완료. 
+- 만약에 nextInt() 후에 nextInt()가 올 경우, 첫음 엔터하고 나서 [E]남았을 때, 그것 무시하고 자기값만 받아옴
+
+***도움말 보는 방법 : 클래스 드래그 + F4
+
+/////
+
+JVM이 전체 코드를 메모리에 다 올려놓고,
+읽는거는 한줄씩 하는 것
+--> 그래서 C언어랑은 다르게 절차적으로 쓰지 않아도 됨
+
+ASCII코드(통신문자코드) : 0~126
+0~31 : 통신 및 제어문자
+    '\r' : carriage return(Home) = '\r\n' : 맨 앞으로 가라, 그리고 엔터해라
+    '\n' : new line(Enter)
+    '\t' : tab key
+    '\b' : caret(커서)의 위치를 이전으로 이동
+    '\a' : alert경고음
+    '\f' : 다음장으로 이동해라.
+32~126 : 키보드상 문자코드
+    '  ' : 32
+    'A' : 65
+    'a' : 97 //소->대문자 간격 : 32
+    '0' : 48
+    '1' : 49
+
+System.out.printf("%c\n",65); --- 데어터 종류가 숫자일때는 %c 지정자가 문자로 이해해서 출력
+System.out.printf("%d\n",'한'); -- 에러. 왜? '한'은 데이터 종류가 문자인데, %d라고 해서.
+>> 숫자의 경우에는 형식지정자 c 통해 문자로 변환 가능
+>> 문자의 경우에는 형식지정자 d 통해 숫자로 변환X **형변환해야함

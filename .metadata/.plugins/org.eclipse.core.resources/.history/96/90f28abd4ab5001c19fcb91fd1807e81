@@ -1,0 +1,14 @@
+package mymain.echo;
+
+import java.net.ServerSocket;
+
+public class EchoServer {
+
+	public static void main(String[] args) {
+		
+		//1. ServerSocket»ý¼º
+		ServerSocket server = new ServerSocket(7000);
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+package mymain.test;
+
+public class InetAddressTest {
+	public static void main(String[] args) {
+		//cmd에서 ping www.naver.com 하면 naver주소를 알 수 있음
+		//DNS : domain name service server (www.naver.com)
+	}
+}

@@ -1,0 +1,12 @@
+import javax.swing.JFrame;
+
+public class ComboBoxTest extends JFrame{
+	
+	ComboBoxTest(){
+		
+	}
+	
+	public static void main(String[] args) {
+		new ComboBoxTest();
+	}
+}

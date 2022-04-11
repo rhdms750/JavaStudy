@@ -1,0 +1,14 @@
+package mymain.echo;
+
+import java.net.Socket;
+
+public class EchoClient {
+
+	public static void main(String[] args) {
+
+		//1. 접속 요청
+		Socket client = new Socket("localhost", 7000);
+		
+	}
+
+}

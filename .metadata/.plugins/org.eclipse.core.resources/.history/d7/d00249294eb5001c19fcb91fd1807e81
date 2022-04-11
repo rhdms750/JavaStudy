@@ -1,0 +1,14 @@
+package mymain.echo;
+
+import java.net.Socket;
+
+public class EchoClient {
+
+	public static void main(String[] args) throws Exception{
+
+		//1. 접속 요청 : localhost <- 내부 IP
+		Socket client = new Socket("localhost", 7000);
+		System.out.println("--클라이언트 연결 성공--");
+	}
+
+}
