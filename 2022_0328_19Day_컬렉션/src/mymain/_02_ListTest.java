@@ -10,37 +10,37 @@ public class _02_ListTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		List<String> sido_list = new ArrayList<String>();
-		sido_list.add("Á¦¹ß");
-		sido_list.add("¹ß·Î");
-		sido_list.add("¼øÇÏ");
-		sido_list.add("¼­³×");
-		sido_list.add("´ë³ª");
-		sido_list.add("·Îµµ");
-		sido_list.add("ÇÏÇÏ");
-		sido_list.add("¼¼°Ú");
-		sido_list.add("¿ä´Ù");
+		sido_list.add("ìˆœ");
+		sido_list.add("ì„œ");
+		sido_list.add("ëŒ€");
+		sido_list.add("ë¡œ");
+		sido_list.add("í•˜");
+		sido_list.add("ë‚˜");
+		sido_list.add("í•˜");
+		sido_list.add("ë‚˜");
+		sido_list.add("ì”©");
 		
 		System.out.println(sido_list);
 		
-		System.out.println("----[°³¼± Loop]----");
+		System.out.println("----[ê°œì„  Loop]----");
 		for(String sido : sido_list) {
 			System.out.println(sido);
 		}
 		
-		System.out.println("----[Ã·ÀÚ]----");
+		System.out.println("----[ì²¨ì]----");
 		for(int i = 0; i < sido_list.size(); i++) {
 			String s = sido_list.get(i);
 			System.out.printf("%d:%s%n",i,s);
 		}
 		
-		//---³»°¡ ¸¸µç Á¦³×¸¯
-		//Å¬·¡½º ³»ºÎÀÇ Generic TypeÀº °´Ã¼ »ı¼ºÇÒ ¶§ Çü¼ºµÊ
+		//---ë‚´ê°€ ë§Œë“  ì œë„¤ë¦­
+		//í´ë˜ìŠ¤ ë‚´ë¶€ì˜ Generic Typeì€ ê°ì²´ ìƒì„±í•  ë•Œ í˜•ì„±ë¨
 		MyArrayList<String> fruit_list = new MyArrayList<String>();
-		fruit_list.add("»ç°ú");
-		fruit_list.add("Âü¿Ü");
-		fruit_list.add("Æ÷µµ");
-		fruit_list.add("¼ö¹Ú");
-		fruit_list.add("µş±â");
+		fruit_list.add("ì‚¬ê³¼");
+		fruit_list.add("ì°¸ì™¸");
+		fruit_list.add("í¬ë„");
+		fruit_list.add("ìˆ˜ë°•");
+		fruit_list.add("ë”¸ê¸°");
 		
 		MyArrayList<Integer> su_list = new MyArrayList<Integer>();
 		
